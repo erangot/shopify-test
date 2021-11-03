@@ -1,12 +1,112 @@
+.sale-ends-tomorrow {
+  height: 36px;
+  background-color: #181800;
+
+  p {
+    color: #f3e6ff;
+    font-size: 12px;
+    letter-spacing: 0.43px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
+.rectangle > * {
+  flex: 1;
+}
+
 .rectangle {
-  background-color: gray;
-  padding: 63px 48px;
-  display: grid;
+  background-color: white;
+  padding: 0 48px;
+  height: 160px;
+  display: flex;
+  align-items: center;
 
   .navigation {
+    display: inline-flex;
+    list-style-type: none;
+    padding-inline-start: 40px;
     li {
-      display: inline-block;
-      padding-left: 40px;
+      padding-right: 40px;
     }
+  }
+
+  .logo-container {
+    text-align: center;
+    .logo {
+      height: 35px;
+      width: 292.83px;
+    }
+  }
+
+  .basket {
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+.splash-img {
+  height: 1000px;
+  background-image: url(../img/body-wash-collection.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+  .text-box {
+    padding: 7em;
+    align-self: center;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 100;
+      line-height: 61px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 31px;
+    }
+
+    .button {
+      margin-top: 1.5em;
+      box-sizing: border-box;
+      height: 57px;
+      width: 171px;
+      border: 2px solid #181800;
+      background-color: #181800;
+      text-align: center;
+
+      span {
+        color: #ffffff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 57px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rectangle {
+    height: 80px;
+    .navigation {
+      width: 0px;
+      li {
+        display: none;
+      }
+    }
+
+    .logo-container {
+      text-align: left;
+      .logo {
+        width: 200px;
+        height: 60%;
+      }
+    }
+  }
+
+  .basket {
+    display: none;
   }
 }

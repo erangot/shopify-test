@@ -1,0 +1,12 @@
+.rectangle {
+  background-color: gray;
+  padding: 63px 48px;
+  display: grid;
+
+  .navigation {
+    li {
+      display: inline-block;
+      padding-left: 40px;
+    }
+  }
+}

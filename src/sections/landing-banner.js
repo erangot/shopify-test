@@ -27,7 +27,7 @@ const LandingBanner = () => {
         <div class="text-box">
           <h2>A gift for mum at Christmas</h2>
           <p>
-            Luxurious soaps in a can. <br /> Give the world’s first plastic-free{" "}
+            Luxurious soaps in a can. <br /> Give the world’s first plastic-free
             <br />
             refill to your very best.
           </p>
